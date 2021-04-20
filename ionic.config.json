@@ -1,0 +1,7 @@
+{
+  "name": "Antojate",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
