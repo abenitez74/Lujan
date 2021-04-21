@@ -1,0 +1,79 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slides</title>
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+  <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"/>
+  <style>
+    :root {
+      --ion-safe-area-top: 20px;
+      --ion-safe-area-bottom: 22px;
+    }
+  </style>
+</head>
+
+  <ion-app>
+    <ion-content fullscreen class="ion-padding" scroll-y="false">
+      <ion-slides>
+
+        <ion-slide>
+          <div class="slide">
+            <img src="assets/img/windows.jpg"/>
+            <h2>windows</h2>
+            <p>El <b>sistema windows</b> na familia de distribuciones de software para PC</p>
+          </div>
+        </ion-slide>
+
+        <ion-slide>
+          <img src="assets/img/mac.png"/>
+          <h2>macOS</h2>
+          <p>El <b>sistema macOS</b> es una serie de sistemas operativos gráficos desarrollados y comercializados por Apple.</p>
+        </ion-slide>
+
+        <ion-slide>
+          <img src="assets/img/linux.jpg"/>
+          <h2>linux</h2>
+          <p>El <b>sistema operativo linux</b>de open source y una plataforma de infraestructura de TI. Originalmente, fue concebido y creado como un pasatiempo.</p>
+        </ion-slide>
+
+
+      </ion-slides>
+    </ion-content>
+  </ion-app>
+
+  <style>
+    ion-slides {
+      height: 100%;
+    }
+
+    .swiper-slide {
+      display: block;
+    }
+
+    .swiper-slide h2 {
+      margin-top: 2.8rem;
+    }
+
+    .swiper-slide img {
+      max-height: 50%;
+      max-width: 80%;
+      margin: 60px 0 40px;
+      pointer-events: none;
+    }
+
+    b {
+      font-weight: 500;
+    }
+
+    p {
+      padding: 0 40px;
+      font-size: 14px;
+      line-height: 1.5;
+      color: var(--ion-color-step-600, #60646b);
+    }
+
+    p b {
+      color: var(--ion-text-color, #000000);
+    }
+  </style>

@@ -20,8 +20,17 @@ const routes: Routes = [
         loadChildren: () => import('../tab3/tab3.module').then(m => m.Tab3PageModule)
       },
       {
+        path: 'sitios',
+        loadChildren: () => import('../sitios/sitios.module').then(m => m.SitiosPageModule)
+      },
+      {
+        path: 'sistema',
+        loadChildren: () => import('../sistema/sistema.module').then(m => m.SistemaPageModule)
+      },
+      
+      {
         path: '',
-        redirectTo: '/tabs/tab1',
+        redirectTo: '/tabs/sistema',
         pathMatch: 'full'
       }
     ]

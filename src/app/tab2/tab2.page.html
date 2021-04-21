@@ -1,17 +1,57 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 2
+      Editores
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-list>
+    <ion-list-header>
+      Editores de Código 
+    </ion-list-header>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
-</ion-content>
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="assets/img/vsc-logo.png">
+      </ion-avatar>
+      <ion-label>
+        <h2>VSC</h2>
+        <p> Es compatible con varios lenguajes</p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="assets/img/atom-logo.png">
+      </ion-avatar>
+      <ion-label>
+        <h2>Atom</h2>
+        <p>es un moderno editor de código y texto que además es hackeable y que ha sido creado por la gente de Github.</p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="assets/img/logo-sublime.png">
+      </ion-avatar>
+      <ion-label>
+        <h2>sublime</h2>
+        <h3></h3>
+        <p>Sublime Text es un editor de Texto para escribir código en casi cualquier formato de archivo. </p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="assets/img/logo-notepad.png">
+      </ion-avatar>
+      <ion-label>
+        <h2>notepad ++</h2>
+        <h3></h3>
+        <p>Notepad++ es un editor de texto y de código fuente libre con soporte para varios lenguajes de programación. </p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+  </ion-content>
